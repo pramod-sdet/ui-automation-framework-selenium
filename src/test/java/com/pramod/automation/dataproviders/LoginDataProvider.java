@@ -1,19 +1,23 @@
 package com.pramod.automation.dataproviders;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import org.testng.annotations.DataProvider;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import com.google.gson.Gson;
-import com.pramod.automation.utility.CSVReaderUtility;
-import com.pramod.automation.utility.ExcelReaderUtility;
+import com.opencsv.CSVReader;
 import com.pramod.pojo.TestData;
 import com.pramod.pojo.User;
+import com.pramod.automation.*;
+import com.pramod.automation.utility.CSVReaderUtility;
+import com.pramod.automation.utility.ExcelReaderUtility;
 
 public class LoginDataProvider {
 	@DataProvider(name = "LoginTestDataProvider")
@@ -45,8 +49,7 @@ public class LoginDataProvider {
 	@DataProvider(name = "LoginTestExcelDataProvider")
 	public Iterator<User> loginExcelDataProvider() {
 		return ExcelReaderUtility.readExcelFile("LoginData.xlsx");
-	}
-	
+		
 		
 		@DataProvider(name ="LoginDataProvider")
 		
