@@ -1,0 +1,16 @@
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/constants/Browser.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/constants/Env.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/ui/dataproviders/LoginDataProvider.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/ui/pages/HomePage.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/ui/pages/LoginPage.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/ui/pages/MyAccountPage.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/ui/pojo/Config.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/ui/pojo/Environment.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/ui/pojo/TestData.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/ui/pojo/User.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/ui/tests/LoginTest3.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/utility/BrowserUtility.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/utility/CSVReaderUtility.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/utility/ExcelReaderUtility.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/utility/JSONUtility.java
+/Users/pramod.pardeshi/eclipse-workspace/automation-assignment/src/test/java/com/utility/PropertiesUtil.java

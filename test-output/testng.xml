@@ -1,0 +1,11 @@
+
+
+<suite name="Automation Practice Test Suite"  parallel="methods" thread-count= "8" verbose="1">
+  <test name="UI Automation Test">
+    <classes>
+       <class name="com.pramod.automation.tests.LoginTest"/>
+    </classes>
+  </test>
+
+  
+</suite>
