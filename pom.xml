@@ -11,6 +11,33 @@
 		Analyzer and Logging
 </description>
 
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.5.4</version>
+				<configuration>
+					<suiteXmlFiles>
+
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+
+						<systemPropertyVariables>
+							<browser>chrome</browser>
+							<isLambdaTest>false</isLambdaTest>
+							<isHeadless>true</isHeadless>
+						</systemPropertyVariables>
+					</suiteXmlFiles>
+				</configuration>
+
+
+			</plugin>
+		</plugins>
+
+
+	</build>
+
 
 	<properties>
 		<maven.compiler.source>21</maven.compiler.source>

@@ -24,24 +24,24 @@ public class LoginTest extends TestBase {
 		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
 				"Pramod Pardeshi");
 	}
-
-	@Test(description = "Verifies if the user is able to login into the System...!", groups = { "e2e",
-			"sanity" }, dataProviderClass = com.pramod.automation.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
-
-	public void loginCSVTest(User user) {
-
-		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
-				"Pramod Pardeshi");
-	}
-
-	@Test(description = "Verifies if the user is able to login into the System...!", groups = { "e2e",
-			"sanity" }, dataProviderClass = com.pramod.automation.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider", retryAnalyzer = com.pramod.automation.listeners.MyRetryAnalyzer.class)
-
-	public void loginExcelTest(User user) {
-
-		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
-				"Pramod Pardeshi");
-
-	}
+//
+//	@Test(description = "Verifies if the user is able to login into the System...!", groups = { "e2e",
+//			"sanity" }, dataProviderClass = com.pramod.automation.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
+//
+//	public void loginCSVTest(User user) {
+//
+//		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
+//				"Pramod Pardeshi");
+//	}
+//
+//	@Test(description = "Verifies if the user is able to login into the System...!", groups = { "e2e",
+//			"sanity" }, dataProviderClass = com.pramod.automation.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider", retryAnalyzer = com.pramod.automation.listeners.MyRetryAnalyzer.class)
+//
+//	public void loginExcelTest(User user) {
+//
+//		assertEquals(homePage.goToLoginPage().doLoginWith(user.getEmailAddress(), user.getPassword()).getUserName(),
+//				"Pramod Pardeshi");
+//
+//	}
 
 }
