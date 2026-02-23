@@ -12,41 +12,46 @@
 </description>
 
 	<build>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
 
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.5.4</version>
-				<configuration>
-					<suiteXmlFiles>
+    <plugins>
 
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+        <!-- Compiler Plugin -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.15.0</version>
+            <configuration>
+                <source>21</source>
+                <target>21</target>
+            </configuration>
+        </plugin>
 
-						<systemPropertyVariables>
-							<browser>chrome</browser>
-							<isLambdaTest>false</isLambdaTest>
-							<isHeadless>true</isHeadless>
-						</systemPropertyVariables>
-					</suiteXmlFiles>
-				</configuration>
+        <!-- Surefire Plugin -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.5.4</version>
 
+            <configuration>
 
-			</plugin>
+                <suiteXmlFiles>
+                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.15.0</version>
-				<configuration>
-					<source>21</source>
-					<target>21</target>
-				</configuration>
-			</plugin>
-		</plugins>
+                <systemPropertyVariables>
+                    <browser>chrome</browser>
+                    <isLambdaTest>false</isLambdaTest>
+                    <isHeadless>true</isHeadless>
+                </systemPropertyVariables>
 
+            </configuration>
 
-	</build>
+        </plugin>
+
+    </plugins>
+
+</build>
 
 
 	<properties>
