@@ -11,5 +11,5 @@
 .DS_Store/target/
 /screenshot/
 /logs/
-/report.html
-/src/
+/report.html/
+/target/
